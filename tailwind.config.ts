@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"Open Sans"', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +50,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        saffron: {
+          DEFAULT: "hsl(var(--saffron))",
+          deep: "hsl(var(--saffron-deep))",
+        },
+        "india-green": {
+          DEFAULT: "hsl(var(--india-green))",
+          light: "hsl(var(--india-green-light))",
+        },
+        navy: "hsl(var(--navy))",
+        "chakra-blue": "hsl(var(--chakra-blue))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
