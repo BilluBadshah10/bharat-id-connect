@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 import heroBg from "@/assets/hero-bg.jpg";
-import emblem from "@/assets/ashoka-emblem.png";
+import logo from "@/assets/logo.jpg";
 
 const features = [
   {
@@ -50,12 +50,12 @@ const Index = () => {
         <div className="container relative mx-auto px-4 py-20 md:py-32">
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-6 flex justify-center animate-fade-in">
-              <img src={emblem} alt="National Emblem" className="h-20 w-20 opacity-80" />
+              <img src={logo} alt="National Emblem" className="h-24 w-24 rounded-full object-cover shadow-lg" />
             </div>
 
             <h1 className="mb-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl animate-fade-up">
               India's National
-              <span className="text-gradient-saffron"> Digital Identity </span>
+              <span className="text-gradient-green"> Digital Identity </span>
               Verification
             </h1>
 
@@ -92,7 +92,7 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</div>
+                <div className="text-2xl md:text-3xl font-bold text-secondary">{stat.value}</div>
                 <div className="mt-1 text-xs text-muted-foreground">{stat.label}</div>
               </div>
             ))}

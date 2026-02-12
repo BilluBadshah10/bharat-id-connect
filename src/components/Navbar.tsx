@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Shield, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import emblem from "@/assets/ashoka-emblem.png";
+import logo from "@/assets/logo.jpg";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -22,7 +22,7 @@ const Navbar = () => {
 
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center gap-2 group">
-          <img src={emblem} alt="National Emblem" className="h-9 w-9 transition-transform group-hover:scale-105" />
+          <img src={logo} alt="National Emblem" className="h-9 w-9 rounded-full object-cover transition-transform group-hover:scale-105" />
           <div className="flex flex-col">
             <span className="text-sm font-bold tracking-tight text-foreground leading-tight">
               DigiVerify
