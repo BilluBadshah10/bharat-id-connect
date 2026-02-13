@@ -11,6 +11,7 @@ const Navbar = () => {
   const links = [
     { to: "/", label: "Home" },
     { to: "/enroll", label: "Enroll" },
+    { to: "/verify", label: "Verify" },
     { to: "/login", label: "Login" },
     { to: "/dashboard", label: "Dashboard" },
   ];
