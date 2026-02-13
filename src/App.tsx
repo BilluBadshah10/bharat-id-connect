@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Login from "./pages/Login";
 import Enroll from "./pages/Enroll";
 import Dashboard from "./pages/Dashboard";
+import BiometricVerify from "./pages/BiometricVerify";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/login" element={<Login />} />
           <Route path="/enroll" element={<Enroll />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/verify" element={<BiometricVerify />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
